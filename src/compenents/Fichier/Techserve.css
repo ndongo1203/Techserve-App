@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:rgb(250, 248, 248) !important;
+}
+
+.header{
+    background-image: url('../Images/Image2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+    filter: blur(0 2px 0)
+}
+
+.page::before{
+    content: "";
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 50%; /* Ajustez cette valeur pour contrôler la zone floue à gauche */
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5) !important; /* Couleur blanche avec une opacité */
+    backdrop-filter: blur(4px) !important; /* Flou à appliquer */
+    z-index: -1;
+}
+
+.Text{
+    position: relative;
+    text-align: center;
+    top: 35vh;
+    right: 25vh;
+    line-height: 30px;
+    color: white !important;
+}
+
+/* section card-img */
+.card-position{
+    position: relative;
+    right: 100px;
+    top: 60px;
+}
+
+.btn-card{
+    position: relative;
+    bottom: 20px;
+    right: 50px;
+}
+
+.btn-card .free-btn{
+    background: blueviolet !important;
+}
+
+.card-img-top{
+    width: 60px !important;
+    height: 60px !important;
+    position: relative;
+    bottom: 40px;
+}
+
+.my-custom-class{
+    transform: scale(1.1) !important;
+    border: 1px solid red;
+}
+
+.action{
+    background-color: darkslateblue;
+}
+
+.footer .nav-item{
+    text-decoration: none !important;
+    list-style-type: none !important;
+}
+
+
+@media screen and (max-width: 768px) {
+    .this-nav {
+        width: 90%;
+    }
+
+    /* .page{
+        width: 100% !important;
+    } */
+
+    .page::before{
+        display: none;
+    }
+
+    .Text{
+        right: 0;
+    }
+
+    .card-position{
+        right: 0;
+        /* top: 60px; */
+    }
+
+    .this-img-card img {
+        width: 100% !important;
+        padding: 0;
+    }
+
+    .scal-card{
+        transform: none;
+    }
+
+    .footer-liste ul li{
+        position: relative;
+        right: 70px;
+    }
+
+    .text-end{
+        position: relative;
+        right: 40px;
+    }
+}
+

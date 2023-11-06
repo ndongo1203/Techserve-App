@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+
 import './App.css';
+import React from 'react';
+import Header from './compenents/Fichier/Header';
+import Service from './compenents/Fichier/Service';
+import Card from './compenents/Fichier/Card'
+import Client from './compenents/Fichier/Client';
+import Techserve from './compenents/Fichier/Techserve';
+import TechserveFooter from './compenents/Fichier/TechserveFooter';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Header />
+    <Service />
+    <Card />
+    <Client />
+    <Techserve />
+    <TechserveFooter />
     </div>
   );
 }
